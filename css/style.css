@@ -25,6 +25,10 @@ section {
 	font-family: helvetica;
 }
 
+#bio-images div img{
+  width: 150px;
+}
+
 nav{
 	color: white;
 }

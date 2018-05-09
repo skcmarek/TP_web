@@ -1,224 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
     <title>Stránka tímového projektu VizReal</title>
-
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </head>
-
-  <body>
-
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" id="navTitle">Just 18</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">O projekte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Tím</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#documents">Dokumenty</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header class="bg-primary text-white" id="#page-top">
-      <div class="container text-center">
-        <h1>Vitajte na stránke tímového projektu VizReal</h1>
-        <p class="lead">Tím č. 18</p>
-      </div>
-    </header>
-
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>O projekte</h2>
-            <h4>Motivácia</h4>
-            <p>Človek je v dnešnej dobe zahltený čoraz väčším množstvom informácií a je pre neho obtiažne si dané informácie zapamätať. Z nedávnych poznatkov je zrejmé, že vizualizácia informácií nám pomáha si ich ľahšie zapamätať Je to spôsobené zapojením oboch hemisfér mozgu narozdiel od zapojenia iba ľavej hemisféry pri spracovaní informácií vo forme čísel alebo písaného textu.</p>
-            <p>Ďalším dôležitým faktom je charakter dnešných dát. Tie bývajú často multidimenzionálne, pričom pod dimenziou chápeme počet atribútov, ktoré majú jednotlivé položky datasetu. Často nás zaujímajú iba niektoré dimenzie a tie ostatné vnímame ako šum, ktorý nám sťažuje vnímanie vlastností a vzťahov v datasete. Neprehľadnosť môže byť tiež umocnená veľkosťou analyzovaných dát. V takom prípade tiež výrazne pomôže vizualizácia dát vo forme grafu. Tá nám umožní vnímať vzťahy či vzory, ktoré predtým neboli viditeľné.</p>
-            <h4>Ciele</h4>
-            <p>3DSoftviz je už niekoľko rokov vyvíjaný softvér na Fakulte informatiky a informačných technológií STU. Na začiatku bol vytvorený s úmyslom stať sa general-purpose nástrojom na vizualizáciu informácií pomocou grafových štruktúr. Neskôr sa zameral na vizualizáciu softvéru. Napriek neskoršiemu vymedzeniu sa je ho ale po pomerne malých modifikáciách možné prispôsobiť na vizualizáciu informácii aj z iných oblastí.</p>
-            <p>Aktuálne sa využíva na vizualizáciu statických aspektov softvéru vo forme orientovaných či neorientovaých grafov. Datasety s informáciami o uzloch a hranách dokáže načítať z XML súboru, databázy či git repozitára. Okrem iného je tiež možné pridávanie uzlov či hrán, viacero možností rozmiestnenia uzlov grafu, manipulácia s grafom pomocou myši, zhlukovanie uzlov či vizualizácia evolúcie softvéru - zmien softvéru v čase zachytených v trojrozmernom priestore.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="team" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto">
-            <h2>Tím</h2>
-            <p class="lead"></p>
-             <div class="row" id="bio-images">
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/marek.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Marek Škriečka</h4>
-                  <hr>
-                  <p>Marek bol prvé tri šprinty Scrum Master, staral sa o plnenie úloh, manažoval úlohy v TFS a facilitoval stretnutia. Vytvoril a spravuje webovú prezentáciu tímu. Z pohľadu vývoja produktu sa zaoberal spojazdnením projektu na platforme Windows Subsystem for Linux.</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/bence.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Bence Ligárt</h4>
-                  <hr>
-                  <p>Bence je windows integrátor a tester.Úloha windows integrátora zahŕňa: testovanie kompatibility implementovaných častí na operačnom systéme windows, podpora ovládačov.</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/peto.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Peter Marušin</h4>
-                  <hr>
-                  <p>Peťo je zodpovedný za dokumentáciu a tiež spravuje git repozitár projektu. Písal zápisnice počas stretnutí tímu. Udržiaval Slack, vytváral či revidoval dokumentáciu a snažil sa oboznámiť nielen s dokumentačnými nástrojmi využívanými v rámci projektu.</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/martin.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Martin Gašpar</h4>
-                  <hr>
-                  <p>Martin sa spolupodieľa na vývoji a testovaní pre platformu macOS. Pomáha pri vytváraní a manažovaní úloh cez nástroj TFS</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/tomas.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Tomáš Krupa</h4>
-                  <hr>
-                  <p>Tomáš sa podieľa na refaktorizácii a automatizácii zostavovania zdrojového kódu. Primárnym zameraním je C++ a CMake na platforme Linux.</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/miso.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Michal Knapík</h4>
-                  <hr>
-                  <p>Michal je OS X integrátor, podieľa sa na správe projektu z pohľadu zostavovacieho nástroja cmake a na zjednodušení jeho používania vrámci projektu.</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 text-center mb-4">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="images/milo.jpg" alt="">
-                <div class="teamBio">
-                  <h4>Milo Slížik</h4>
-                  <hr>
-                  <p>Milo sa spolupodieľa na vývoji a testovaní pre platformu Linux a spravuje tímový server.</p>
-                </div>
-              </div>
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" id="navTitle">Just 18</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">O projekte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Tím</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#documents">Dokumenty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
             </div>
         </div>
-      </div>
+    </nav>
+    <header class="bg-primary text-white" id="#page-top">
+        <div class="container text-center">
+            <h1>Vitajte na stránke tímového projektu VizReal</h1>
+            <p class="lead">Tím č. 18</p>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>O projekte</h2>
+                    <h4>Motivácia</h4>
+                    <p>Človek je v dnešnej dobe zahltený čoraz väčším množstvom informácií a je pre neho obtiažne si dané informácie zapamätať. Z nedávnych poznatkov je zrejmé, že vizualizácia informácií nám pomáha si ich ľahšie zapamätať Je to spôsobené zapojením oboch hemisfér mozgu narozdiel od zapojenia iba ľavej hemisféry pri spracovaní informácií vo forme čísel alebo písaného textu.</p>
+                    <p>Ďalším dôležitým faktom je charakter dnešných dát. Tie bývajú často multidimenzionálne, pričom pod dimenziou chápeme počet atribútov, ktoré majú jednotlivé položky datasetu. Často nás zaujímajú iba niektoré dimenzie a tie ostatné vnímame ako šum, ktorý nám sťažuje vnímanie vlastností a vzťahov v datasete. Neprehľadnosť môže byť tiež umocnená veľkosťou analyzovaných dát. V takom prípade tiež výrazne pomôže vizualizácia dát vo forme grafu. Tá nám umožní vnímať vzťahy či vzory, ktoré predtým neboli viditeľné.</p>
+                    <h4>Ciele</h4>
+                    <p>3DSoftviz je už niekoľko rokov vyvíjaný softvér na Fakulte informatiky a informačných technológií STU. Na začiatku bol vytvorený s úmyslom stať sa general-purpose nástrojom na vizualizáciu informácií pomocou grafových štruktúr. Neskôr sa zameral na vizualizáciu softvéru. Napriek neskoršiemu vymedzeniu sa je ho ale po pomerne malých modifikáciách možné prispôsobiť na vizualizáciu informácii aj z iných oblastí.</p>
+                    <p>Aktuálne sa využíva na vizualizáciu statických aspektov softvéru vo forme orientovaných či neorientovaých grafov. Datasety s informáciami o uzloch a hranách dokáže načítať z XML súboru, databázy či git repozitára. Okrem iného je tiež možné pridávanie uzlov či hrán, viacero možností rozmiestnenia uzlov grafu, manipulácia s grafom pomocou myši, zhlukovanie uzlov či vizualizácia evolúcie softvéru - zmien softvéru v čase zachytených v trojrozmernom priestore.</p>
+                </div>
+            </div>
+        </div>
     </section>
-
+    <section id="team" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2>Tím</h2>
+                    <p class="lead"></p>
+                    <div class="row" id="bio-images">
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/marek.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Marek Škriečka</h4>
+                                <hr>
+                                <p>Marek bol prvé tri šprinty Scrum Master, staral sa o plnenie úloh, manažoval úlohy v TFS a facilitoval stretnutia. Vytvoril a spravuje webovú prezentáciu tímu. Z pohľadu vývoja produktu sa zaoberal spojazdnením projektu na platforme Windows Subsystem for Linux.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/bence.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Bence Ligárt</h4>
+                                <hr>
+                                <p>Bence je windows integrátor a tester.Úloha windows integrátora zahŕňa: testovanie kompatibility implementovaných častí na operačnom systéme windows, podpora ovládačov.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/peto.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Peter Marušin</h4>
+                                <hr>
+                                <p>Peťo je zodpovedný za dokumentáciu a tiež spravuje git repozitár projektu. Písal zápisnice počas stretnutí tímu. Udržiaval Slack, vytváral či revidoval dokumentáciu a snažil sa oboznámiť nielen s dokumentačnými nástrojmi využívanými v rámci projektu.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/martin.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Martin Gašpar</h4>
+                                <hr>
+                                <p>Martin sa spolupodieľa na vývoji a testovaní pre platformu macOS. Pomáha pri vytváraní a manažovaní úloh cez nástroj TFS</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/tomas.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Tomáš Krupa</h4>
+                                <hr>
+                                <p>Tomáš sa podieľa na refaktorizácii a automatizácii zostavovania zdrojového kódu. Primárnym zameraním je C++ a CMake na platforme Linux.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/miso.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Michal Knapík</h4>
+                                <hr>
+                                <p>Michal je OS X integrátor, podieľa sa na správe projektu z pohľadu zostavovacieho nástroja cmake a na zjednodušení jeho používania vrámci projektu.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/milo.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Milo Slížik</h4>
+                                <hr>
+                                <p>Milo sa spolupodieľa na vývoji a testovaní pre platformu Linux a spravuje tímový server.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <section id="documents">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Dokumenty</h2>
-            <p class="lead">Na tomto mieste sa nachádzajú dokumenty a zápisnice zo stretnutí</p>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <h4>Zápisnice</h4>
-            <hr>
-             <ul>
-              <li><a href="docs/reports/report01.pdf" target="_blank">Zápisnica 1. stretnutie (28.9.2017) </a></li>
-              <li><a href="docs/reports/report02.pdf" target="_blank">Zápisnica 2. stretnutie (05.10.2017) </a></li>
-              <li><a href="docs/reports/report03.pdf" target="_blank">Zápisnica 3. stretnutie (12.10.2017) </a></li>
-              <li><a href="docs/reports/report04.pdf" target="_blank">Zápisnica 4. stretnutie (19.10.2017) </a></li>
-              <li><a href="docs/reports/report05.pdf" target="_blank">Zápisnica 5. stretnutie (26.10.2017) </a></li>
-              <li><a href="docs/reports/report06.pdf" target="_blank">Zápisnica 6. stretnutie (2.11.2017) </a></li>
-              <li><a href="docs/reports/report07.pdf" target="_blank">Zápisnica 7. stretnutie (9.11.2017) </a></li>
-              <li><a href="docs/reports/report08.pdf" target="_blank">Zápisnica 8. stretnutie (16.11.2017) </a></li>
-              <li><a href="docs/reports/report09.pdf" target="_blank">Zápisnica 9. stretnutie (23.11.2017) </a></li>
-              <li><a href="docs/reports/report10.pdf" target="_blank">Zápisnica 10. stretnutie (30.11.2017) </a></li>
-              <li><a href="docs/reports/report11.pdf" target="_blank">Zápisnica 11. stretnutie (7.12.2017) </a></li>
-              <li><a href="docs/reports/report12.pdf" target="_blank">Zápisnica 12. stretnutie (14.02.2018) </a></li>
-              <li><a href="docs/reports/report13.pdf" target="_blank">Zápisnica 13. stretnutie (21.12.2018) </a></li>
-              <li><a href="docs/reports/report14.pdf" target="_blank">Zápisnica 14. stretnutie (28.12.2018) </a></li>
-              <li><a href="docs/reports/report15.pdf" target="_blank">Zápisnica 15. stretnutie (07.03.2018) </a></li>
-              <li><a href="docs/reports/report16.pdf" target="_blank">Zápisnica 16. stretnutie (14.03.2018) </a></li>
-              <li><a href="docs/reports/report17.pdf" target="_blank">Zápisnica 17. stretnutie (28.03.2018) </a></li>
-              <li><a href="docs/reports/report18.pdf" target="_blank">Zápisnica 18. stretnutie (04.04.2018) </a></li>
-              <li><a href="docs/reports/report19.pdf" target="_blank">Zápisnica 19. stretnutie (11.04.2018) </a></li>
-              <li><a href="docs/reports/report20.pdf" target="_blank">Zápisnica 20. stretnutie (18.04.2018) </a></li>
-              <li><a href="docs/reports/report21.pdf" target="_blank">Zápisnica 21. stretnutie (25.04.2018) </a></li>
-              <li><a href="docs/reports/report22.pdf" target="_blank">Zápisnica 22. stretnutie (02.05.2018) </a></li>
-              <li><a href="docs/reports/report23.pdf" target="_blank">Zápisnica 23. stretnutie (09.05.2018) </a></li>
-            </ul>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <h4>Dokumenty</h4>
-            <hr>
-             <ul>
-                <li><a href="docs/docs/riadenie1.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.1)</a></li> 
-                <li><a href="docs/docs/inz_dielo1.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.1)</a></li> 
-                <li><a href="docs/docs/riadenie2.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.2)</a></li> 
-                <li><a href="docs/docs/inz_dielo2.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.2)</a></li> 
-                <li><a href="docs/docs/riadenie3.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.3)</a></li> 
-                <li><a href="docs/docs/inz_dielo3.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.3)</a></li> 
-                <li><a href="docs/docs/riadenie4.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.4)</a></li> 
-                <li><a href="docs/docs/inz_dielo4.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.4)</a></li> 
-            </ul>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <h4>Exporty</h4>
-            <hr>
-             <ul>
-                <li><a href="docs/sprints/sprint01.pdf" target="_blank">Šprint 1</a></li>
-                <li><a href="docs/sprints/sprint02.pdf" target="_blank">Šprint 2</a></li>
-                <li><a href="docs/sprints/sprint03.pdf" target="_blank">Šprint 3</a></li>
-                <li><a href="docs/sprints/sprint04.pdf" target="_blank">Šprint 4</a></li>
-                <li><a href="docs/sprints/sprint05.pdf" target="_blank">Šprint 5</a></li>
-                <li><a href="docs/sprints/sprint06.pdf" target="_blank">Šprint 6</a></li>
-                <li><a href="docs/sprints/sprint07.pdf" target="_blank">Šprint 7</a></li>
-                <li><a href="docs/sprints/sprint08.pdf" target="_blank">Šprint 8</a></li>
-                <li><a href="docs/sprints/sprint09.pdf" target="_blank">Šprint 9</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto" style="margin-top: 30px">
+                    <h2>Dokumenty</h2>
+                    <p class="lead">Na tomto mieste sa nachádzajú dokumenty a zápisnice zo stretnutí</p>
+                </div>
+                <div class="col-md-12 mx-auto" style="margin-top: 30px">
+                    <h4>Zápisnice</h4>
+                    <hr>
+                </div>
+                <div class="col-md-12 mx-auto" style="margin-top: 30px">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5>Zimný semester</h5>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Zápisnica</th>
+                                        <th>Dátum</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td><a href="docs/reports/report01.pdf" target="_blank">Zápisnica 1. stretnutie </a></td>
+                                    <td> 28.9.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report02.pdf" target="_blank">Zápisnica 2. stretnutie  </a></td>
+                                    <td>05.10.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report03.pdf" target="_blank">Zápisnica 3. stretnutie  </a></td>
+                                    <td>12.10.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report04.pdf" target="_blank">Zápisnica 4. stretnutie  </a></td>
+                                    <td>19.10.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report05.pdf" target="_blank">Zápisnica 5. stretnutie  </a></td>
+                                    <td>26.10.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report06.pdf" target="_blank">Zápisnica 6. stretnutie </a></td>
+                                    <td> 2.11.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report07.pdf" target="_blank">Zápisnica 7. stretnutie </a></td>
+                                    <td> 9.11.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report08.pdf" target="_blank">Zápisnica 8. stretnutie  </a></td>
+                                    <td>16.11.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report09.pdf" target="_blank">Zápisnica 9. stretnutie  </a></td>
+                                    <td>23.11.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report10.pdf" target="_blank">Zápisnica 10. stretnutie  </a></td>
+                                    <td>30.11.2017</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="docs/reports/report11.pdf" target="_blank">Zápisnica 11. stretnutie </a></td>
+                                    <td> 7.12.2017</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-5 col-md-offset-2">
+                            <h5>Letný semester</h5>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Zápisnica</th>
+                                        <th>Dátum</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="docs/reports/report12.pdf" target="_blank">Zápisnica 12. stretnutie </a></td>
+                                        <td>14.02.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report13.pdf" target="_blank">Zápisnica 13. stretnutie </a></td>
+                                        <td>21.12.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report14.pdf" target="_blank">Zápisnica 14. stretnutie </a></td>
+                                        <td>28.12.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report15.pdf" target="_blank">Zápisnica 15. stretnutie </a></td>
+                                        <td>07.03.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report16.pdf" target="_blank">Zápisnica 16. stretnutie </a></td>
+                                        <td>14.03.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report17.pdf" target="_blank">Zápisnica 17. stretnutie </a></td>
+                                        <td>28.03.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report18.pdf" target="_blank">Zápisnica 18. stretnutie </a></td>
+                                        <td>04.04.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report19.pdf" target="_blank">Zápisnica 19. stretnutie </a></td>
+                                        <td>11.04.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report20.pdf" target="_blank">Zápisnica 20. stretnutie </a></td>
+                                        <td>18.04.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report21.pdf" target="_blank">Zápisnica 21. stretnutie </a></td>
+                                        <td>25.04.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report22.pdf" target="_blank">Zápisnica 22. stretnutie </a></td>
+                                        <td>02.05.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="docs/reports/report23.pdf" target="_blank">Zápisnica 23. stretnutie </a></td>
+                                        <td>09.05.2018</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto" style="margin-top: 30px">
+                    <h4>Kontrólne body</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5>Zimný semester</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="docs/docs/riadenie1.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.1)</a></li>
+                                <li class="list-group-item"><a href="docs/docs/inz_dielo1.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.1)</a></li>
+                                <li class="list-group-item"><a href="docs/docs/riadenie2.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.2)</a></li>
+                                <li class="list-group-item"><a href="docs/docs/inz_dielo2.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.2)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 col-md-offset-2">
+                            <h5>Letný semester</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="docs/docs/riadenie3.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.3)</a></li>
+                                <li class="list-group-item"><a href="docs/docs/inz_dielo3.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.3)</a></li>
+                                <li class="list-group-item"><a href="docs/docs/riadenie4.pdf" target="_blank">Dokument k riadeniu (Kontrólny bod č.4)</a></li>
+                                <li class="list-group-item"><a href="docs/docs/inz_dielo4.pdf" target="_blank">Dokument k inž. dielu (Kontrólny bod č.4)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mx-auto" style="margin-top: 30px">
+                    <h4>Exporty</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5>Zimný semester</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="docs/sprints/sprint01.pdf" target="_blank">Export šprint 1</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint02.pdf" target="_blank">Export šprint 2</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint03.pdf" target="_blank">Export šprint 3</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint04.pdf" target="_blank">Export šprint 4</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint05.pdf" target="_blank">Export šprint 5</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint06.pdf" target="_blank">Export šprint 6</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 col-md-offset-2">
+                            <h5>Letný semester</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="docs/sprints/sprint07.pdf" target="_blank">Export šprint 7</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint08.pdf" target="_blank">Export šprint 8</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint09.pdf" target="_blank">Export šprint 9</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint10.pdf" target="_blank">Export šprint 10</a></li>
+                                <li class="list-group-item"><a href="docs/sprints/sprint11.pdf" target="_blank">Export šprint 11</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
-
-    <section id="contact"  class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Kontakt</h2>
-            <p class="lead">V prípade akýchkoľvek otázok nás kontaktujte na: <b><a href="mailto:just18team@gmail.com">just18team@gmail.com</a></b></p>
-          </div>
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Kontakt</h2>
+                    <p class="lead">V prípade akýchkoľvek otázok nás kontaktujte na: <b><a href="mailto:just18team@gmail.com">just18team@gmail.com</a></b></p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-
     <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Stránka tímového projektu č. 18</p>
-      </div>
+        <div class="container">
+            <p class="m-0 text-center text-white">Stránka tímového projektu č. 18</p>
+        </div>
     </footer>
-
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-
-  </body>
+</body>
 
 </html>

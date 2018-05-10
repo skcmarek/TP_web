@@ -5,123 +5,124 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Stránka tímového projektu VizReal</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <link href="css/css.css" rel="stylesheet">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#about">O projekte</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#services">Tím</a>
-            </li>
-            <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#contact">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
-    <header class="masthead d-flex">
-        <div class="container text-center my-auto">
-            <h1 class="mb-1">Just 18 team</h1>
-            <h3 class="mb-5">
-          <em>3D software visualization</em>
-        </h3>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" id="navTitle">Just 18</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">O projekte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Tím</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#documents">Dokumenty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="overlay"></div>
-    </header>
-    <section class="content-section bg-light" id="about">
+    </nav>
+    <header class="bg-primary text-white" id="#page-top">
         <div class="container text-center">
+            <h1>Vitajte na stránke tímového projektu VizReal</h1>
+            <p class="lead">Tím č. 18</p>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <h2>O projekte</h2>
-                    <p class="lead mb-5">Motivácia</p>
+                    <h4>Motivácia</h4>
                     <p>Človek je v dnešnej dobe zahltený čoraz väčším množstvom informácií a je pre neho obtiažne si dané informácie zapamätať. Z nedávnych poznatkov je zrejmé, že vizualizácia informácií nám pomáha si ich ľahšie zapamätať Je to spôsobené zapojením oboch hemisfér mozgu narozdiel od zapojenia iba ľavej hemisféry pri spracovaní informácií vo forme čísel alebo písaného textu.</p>
                     <p>Ďalším dôležitým faktom je charakter dnešných dát. Tie bývajú často multidimenzionálne, pričom pod dimenziou chápeme počet atribútov, ktoré majú jednotlivé položky datasetu. Často nás zaujímajú iba niektoré dimenzie a tie ostatné vnímame ako šum, ktorý nám sťažuje vnímanie vlastností a vzťahov v datasete. Neprehľadnosť môže byť tiež umocnená veľkosťou analyzovaných dát. V takom prípade tiež výrazne pomôže vizualizácia dát vo forme grafu. Tá nám umožní vnímať vzťahy či vzory, ktoré predtým neboli viditeľné.</p>
-                    <p class="lead mb-5">Ciele</p>
+                    <h4>Ciele</h4>
                     <p>3DSoftviz je už niekoľko rokov vyvíjaný softvér na Fakulte informatiky a informačných technológií STU. Na začiatku bol vytvorený s úmyslom stať sa general-purpose nástrojom na vizualizáciu informácií pomocou grafových štruktúr. Neskôr sa zameral na vizualizáciu softvéru. Napriek neskoršiemu vymedzeniu sa je ho ale po pomerne malých modifikáciách možné prispôsobiť na vizualizáciu informácii aj z iných oblastí.</p>
                     <p>Aktuálne sa využíva na vizualizáciu statických aspektov softvéru vo forme orientovaných či neorientovaých grafov. Datasety s informáciami o uzloch a hranách dokáže načítať z XML súboru, databázy či git repozitára. Okrem iného je tiež možné pridávanie uzlov či hrán, viacero možností rozmiestnenia uzlov grafu, manipulácia s grafom pomocou myši, zhlukovanie uzlov či vizualizácia evolúcie softvéru - zmien softvéru v čase zachytených v trojrozmernom priestore.</p>
-                    <iframe src="http://htmlpreview.github.io/?https://github.com/AurelienLourot/fork-me-on-gitlab/master/button.html?href=https://gitlab.com/FIIT/3DSoftVis/VizReal" frameborder="0" scrolling="0" width="180px" height="35px"></iframe>
                 </div>
             </div>
         </div>
     </section>
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <section id="team" class="bg-light">
         <div class="container">
-            <div class="content-section-heading">
-                <h3 class="text-secondary mb-0">Tím</h3>
-                <h2 class="mb-5">Členovia tímu</h2>
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2>Tím</h2>
+                    <p class="lead"></p>
+                    <div class="row" id="bio-images">
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/marek.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Marek Škriečka</h4>
+                                <hr>
+                                <p>Marek bol prvé tri šprinty Scrum Master, staral sa o plnenie úloh, manažoval úlohy v TFS a facilitoval stretnutia. Vytvoril a spravuje webovú prezentáciu tímu. Z pohľadu vývoja produktu sa zaoberal spojazdnením projektu na platforme Windows Subsystem for Linux.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/bence.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Bence Ligárt</h4>
+                                <hr>
+                                <p>Bence je windows integrátor a tester.Úloha windows integrátora zahŕňa: testovanie kompatibility implementovaných častí na operačnom systéme windows, podpora ovládačov.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/peto.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Peter Marušin</h4>
+                                <hr>
+                                <p>Peťo je zodpovedný za dokumentáciu a tiež spravuje git repozitár projektu. Písal zápisnice počas stretnutí tímu. Udržiaval Slack, vytváral či revidoval dokumentáciu a snažil sa oboznámiť nielen s dokumentačnými nástrojmi využívanými v rámci projektu.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/martin.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Martin Gašpar</h4>
+                                <hr>
+                                <p>Martin sa spolupodieľa na vývoji a testovaní pre platformu macOS. Pomáha pri vytváraní a manažovaní úloh cez nástroj TFS</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/tomas.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Tomáš Krupa</h4>
+                                <hr>
+                                <p>Tomáš sa podieľa na refaktorizácii a automatizácii zostavovania zdrojového kódu. Primárnym zameraním je C++ a CMake na platforme Linux.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/miso.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Michal Knapík</h4>
+                                <hr>
+                                <p>Michal je OS X integrátor, podieľa sa na správe projektu z pohľadu zostavovacieho nástroja cmake a na zjednodušení jeho používania vrámci projektu.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center mb-4">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="images/milo.jpg" alt="">
+                            <div class="teamBio">
+                                <h4>Milo Slížik</h4>
+                                <hr>
+                                <p>Milo sa spolupodieľa na vývoji a testovaní pre platformu Linux a spravuje tímový server.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row" id="bio-images">
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/marek.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Marek Škriečka</h4>
-                        <hr>
-                        <p>Marek bol prvé tri šprinty Scrum Master, staral sa o plnenie úloh, manažoval úlohy v TFS a facilitoval stretnutia. Vytvoril a spravuje webovú prezentáciu tímu. Z pohľadu vývoja produktu sa zaoberal spojazdnením projektu na platforme Windows Subsystem for Linux.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/bence.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Bence Ligárt</h4>
-                        <hr>
-                        <p>Bence je windows integrátor a tester.Úloha windows integrátora zahŕňa: testovanie kompatibility implementovaných častí na operačnom systéme windows, podpora ovládačov.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/peto.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Peter Marušin</h4>
-                        <hr>
-                        <p>Peťo je zodpovedný za dokumentáciu a tiež spravuje git repozitár projektu. Písal zápisnice počas stretnutí tímu. Udržiaval Slack, vytváral či revidoval dokumentáciu a snažil sa oboznámiť nielen s dokumentačnými nástrojmi využívanými v rámci projektu.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/martin.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Martin Gašpar</h4>
-                        <hr>
-                        <p>Martin sa spolupodieľa na vývoji a testovaní pre platformu macOS. Pomáha pri vytváraní a manažovaní úloh cez nástroj TFS</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/tomas.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Tomáš Krupa</h4>
-                        <hr>
-                        <p>Tomáš sa podieľa na refaktorizácii a automatizácii zostavovania zdrojového kódu. Primárnym zameraním je C++ a CMake na platforme Linux.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/miso.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Michal Knapík</h4>
-                        <hr>
-                        <p>Michal je OS X integrátor, podieľa sa na správe projektu z pohľadu zostavovacieho nástroja cmake a na zjednodušení jeho používania vrámci projektu.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/milo.jpg" alt="">
-                    <div class="teamBio">
-                        <h4>Milo Slížik</h4>
-                        <hr>
-                        <p>Milo sa spolupodieľa na vývoji a testovaní pre platformu Linux a spravuje tímový server.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-    <section class="content-section" id="portfolio">
+    <section id="documents">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mx-auto" style="margin-top: 30px">
@@ -305,24 +306,23 @@
                 </div>
             </div>
     </section>
-    <section id="contact" class="content-section bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="mb-4">V prípade akýchkoľvek otázok nás kontaktujte na: just18team@gmail.com</h2>
-            <a href="https://gitlab.com/FIIT/3DSoftVis/VizReal" class="btn btn-xl btn-dark">Gitlab source</a>
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Kontakt</h2>
+                    <p class="lead">V prípade akýchkoľvek otázok nás kontaktujte na: <b><a href="mailto:just18team@gmail.com">just18team@gmail.com</a></b></p>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="footer text-center">
+    <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="text-muted small mb-0">Stránka tímového projektu Just18</p>
+            <p class="m-0 text-center text-white">Stránka tímového projektu č. 18</p>
         </div>
     </footer>
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
